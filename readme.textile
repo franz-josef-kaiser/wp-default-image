@@ -1,8 +1,8 @@
 h2. Default Images for WordPress Themes
 
-**Version: _v0.1_**
+**Version: _v0.3_**
 
-> **Trac Ticket** - Details can be read in the ticket on trac":http://core.trac.wordpress.org/ticket/18951
+**Trac Ticket** - "Details can be read in the ticket @Trac":http://core.trac.wordpress.org/ticket/18951
 
 ----------------------------------------------------------------
 
@@ -15,7 +15,11 @@ add_image_size( 'default_img', 80, 80, true );
 
 // Inside some template
 $placeholder = get_site_url( null, 'your_path' ).'/some_img.jpg';
-echo wp_default_img( array( 'url' => $placeholder, 'size' => 'default_img' ) );
+
+echo wp_default_img( array( 
+	 'url'  => $placeholder
+	,'size' => 'default_img' 
+) );
 </pre>
 
 
